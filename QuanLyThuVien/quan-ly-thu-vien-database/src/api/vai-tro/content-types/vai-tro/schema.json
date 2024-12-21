@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vai_tros",
+  "info": {
+    "singularName": "vai-tro",
+    "pluralName": "vai-tros",
+    "displayName": "VaiTro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vai_tro_name": {
+      "type": "string"
+    },
+    "sts": {
+      "type": "text"
+    },
+    "tai_khoans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tai-khoan.tai-khoan",
+      "mappedBy": "vai_tros"
+    }
+  }
+}

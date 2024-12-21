@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tai_khoans",
+  "info": {
+    "singularName": "tai-khoan",
+    "pluralName": "tai-khoans",
+    "displayName": "TaiKhoan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "vai_tros": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vai-tro.vai-tro",
+      "inversedBy": "tai_khoans"
+    }
+  }
+}

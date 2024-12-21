@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saches",
+  "info": {
+    "singularName": "sach",
+    "pluralName": "saches",
+    "displayName": "Sach",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sach_name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sts": {
+      "type": "text"
+    },
+    "tacgia": {
+      "type": "text"
+    },
+    "theloai": {
+      "type": "string"
+    }
+  }
+}
